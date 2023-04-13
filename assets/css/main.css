@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 25%;
+    height: auto;
+    padding: 15px;
+    position: relative;
+}
+
+.main .img {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.cart a {
+    padding: 15px 25px;
+    color: black;
+    background-color: rgb(255, 128, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.delete {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: aqua;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+}
+

@@ -1,0 +1,71 @@
+<%- include('adminSidebar')%>
+
+
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+
+              <!-- Basic Layout -->
+              <div class="row">
+                <div class="col-xl">
+                  <div class="card mb-4" style="width: 50%;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">Add Furniture</h5>
+                      <small class="text-muted float-end">Product</small>
+                    </div>
+                    <div class="card-body">
+                      <form method="post" action="/admin/addFurniture/addFurnitureDatafromForm" enctype="multipart/form-data">
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-fullname">name</label>
+                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="Furniture Name" name="name"/>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">type</label>
+                          <input type="text" class="form-control" id="basic-default-company" placeholder="Furniture Type" name="type" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">price</label>
+                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Furniture Price" name="price" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">unit cost</label>
+                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Total Unit Cost" name="cost" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">in stock</label>
+                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Furniture Stock" name="stock" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">total units sold</label>
+                            <input type="text" class="form-control" id="basic-default-fullname" placeholder="Total Furniture Sold" name="sold" />
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-message">Description</label>
+                            <textarea
+                            id="basic-default-message"
+                            class="form-control"
+                            placeholder="Furniture Description"
+                            name="description"
+                            ></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="basic-default-fullname">Picture</label>
+                            <input type="file" class="form-control" id="basic-default-fullname" name="picture" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Furniture</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- / Content -->
+<%- include('adminFooter')%>
