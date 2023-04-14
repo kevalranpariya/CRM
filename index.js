@@ -5,7 +5,7 @@ const port = 4600;
 const server = express();
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://kevalran720:YUYC7k9UhHR7Gecw@cluster0.mmypcla.mongodb.net/CRMproject').then(()=>{
+mongoose.connect('mongodb+srv://kevalran720:YUYC7k9UhHR7Gecw@cluster0.mmypcla.mongodb.net/CRMproject',).then(()=>{
     console.log('Database Connected')
 }).catch((err)=>{
     console.log('Database not connected');

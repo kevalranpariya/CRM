@@ -93,6 +93,5 @@ module.exports.orderView = async(req,res)=>{
             orderDe : checkOrder
         });
     }
-    console.log('Cannot find any order')
-    return res.redirect('back');
+    return res.redirect('/');
 }
