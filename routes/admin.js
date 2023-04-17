@@ -73,4 +73,5 @@ route.get('/changePassword',passport.checkAuthentication, adminController.change
 
 route.post('/getchangePassword',passport.checkAuthentication, adminController.getchangePassword);
 
+
 module.exports = route;

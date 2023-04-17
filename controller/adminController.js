@@ -56,7 +56,7 @@ module.exports.deleteAdminRecord = async (req, res) => {
     const checkAdmin = await Admin.findById(req.params.id);
 
     if (checkAdmin.avatar != 'null') {
-        fs.unlinkSync(path.join(__dirname, '..', checkAdmin.avatar));
+        fs.unlinkSync(path.join(__dirname, '../assets', checkAdmin.avatar));
     }
     const deleteAdmin = await Admin.findByIdAndDelete(req.params.id);
 
